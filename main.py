@@ -27,6 +27,7 @@ def decode(text):
     dec_z = dec_y.replace("𐂯", "z")
     decoded = dec_z
     print(f'\nHere is Your Decoded Text:\n"{decoded}"')
+    exit()
 
 def encode(text):
     enc_a = text.replace("a", "𓂅")
@@ -57,6 +58,7 @@ def encode(text):
     enc_z = enc_y.replace("z", "𐂯")
     encoded = enc_z
     print(f'\nHere is Your Encoded Text:\n"{encoded}"')
+    exit()
 
 def translator(text, type):
     if type == 1:
@@ -78,4 +80,3 @@ coded by: RedFurrFox On GitHub""")
         type=int(input("\nChoices:\n[1] Decode\n[2] Encode\n[0] Exit\n>>> ")),
         text=input("\nPlease enter your text to be translated:\n>>> ")
     )
-    exit()
